@@ -18,6 +18,12 @@ class Main {
         sundae.type = "Dessert";
         sundae.order = false;
 
+        Dessert rcake = new Dessert();
+        rcake.name = "Red Velvet Cake";
+        rcake.calories = 453;
+        rcake.type = "Dessert";
+        rcake.order = false;
+
         // Buy fruit
         System.out.println("Information:");
         cherry.explains();
