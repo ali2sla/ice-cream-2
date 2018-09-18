@@ -11,9 +11,21 @@ class Main {
         cherry.type = "Fruit";
         cherry.order = false;
 
+        // List of Dessert
+        Dessert sundae = new Dessert();
+        sundae.name = "Sundae";
+        sundae.calories = 284;
+        sundae.type = "Dessert";
+        sundae.order = false;
+
         // Buy fruit
         System.out.println("Information:");
         cherry.explains();
         System.out.println();
+        sundae.explains();
+        System.out.println();
+
     }
 }
+
+
