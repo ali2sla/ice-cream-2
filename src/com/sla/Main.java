@@ -9,7 +9,13 @@ class Main {
         cherry.name = "Cherry";
         cherry.calories = 77;
         cherry.type = "Fruit";
-        cherry.order = false;
+        cherry.organic = true;
+
+        Fruit apple = new Fruit();
+        apple.name = "Apple";
+        apple.calories = 95;
+        apple.type = "Fruit";
+        cherry.organic = true;
 
         // List of Dessert
         Dessert sundae = new Dessert();
@@ -24,13 +30,16 @@ class Main {
         recake.type = "Dessert";
         recake.order = false;
 
-        // Buy fruit
+        // Get inforrmation
         System.out.println("Information:");
         cherry.explains();
         System.out.println();
         sundae.explains();
         System.out.println();
 
+        // Check total calories
+        int totalcalories = cherry.calories() + sundae.calories + recake.calories;
+        System.out.println("The total number of calories is " + totalcalories + ".");
     }
 }
 
