@@ -15,7 +15,7 @@ class Main {
         apple.name = "Apple";
         apple.calories = 95;
         apple.type = "Fruit";
-        cherry.organic = true;
+        cherry.organic = false;
 
         // List of Dessert
         Dessert sundae = new Dessert();
