@@ -39,7 +39,7 @@ class Snackshop {
         cantaloupe.size = 1;
         cantaloupe.price = 7;
         cantaloupe.tax = 8/100;
-        cantaloupe.organic = true;
+        cantaloupe.organic = false;
 
         Fruit orange = new Fruit();
         orange.name = "Orange";
@@ -50,18 +50,33 @@ class Snackshop {
         orange.tax = 8/100;
         orange.organic = true;
 
+        Fruit peach = new Fruit();
+        peach.name = "Peach";
+        peach.calories = 59;
+        peach.type = "Fruit";
+        peach.size = 1;
+        peach.price = 4;
+        peach.tax = 8/100;
+        peach.organic = false;
+
         // List of Dessert
         Dessert sundae = new Dessert();
         sundae.name = "Sundae";
         sundae.calories = 284;
         sundae.type = "Dessert";
+        sundae.size = 1;
+        sundae.price = 1;
+        sundae.tax = 8/100;
         sundae.order = false;
 
-        Dessert recake = new Dessert();
-        recake.name = "Red Velvet Cake";
-        recake.calories = 453;
-        recake.type = "Dessert";
-        recake.order = false;
+        Dessert redcake = new Dessert();
+        redcake.name = "Red Velvet Cake";
+        redcake.calories = 453;
+        redcake.type = "Dessert";
+        redcake.size = 1;
+        redcake.price = 30;
+        redcake.tax = 8/100;
+        redcake.order = false;
 
         // Get inforrmation
         System.out.println("Information:");
@@ -71,9 +86,15 @@ class Snackshop {
         System.out.println();
         pineapple.explains();
         System.out.println();
+        cantaloupe.explains();
+        System.out.println();
+        orange.explains();
+        System.out.println();
+        peach.explains();
+        System.out.println();
         sundae.explains();
         System.out.println();
-        recake.explains();
+        redcake.explains();
         System.out.println();
 
         // Get cost
@@ -84,10 +105,24 @@ class Snackshop {
         System.out.println();
         pineapple.buy();
         System.out.println();
+        cantaloupe.buy();
+        System.out.println();
+        orange.buy();
+        System.out.println();
+        peach.buy();
+        System.out.println();
+        sundae.buy();
+        System.out.println();
+        redcake.buy();
+        System.out.println();
 
         // Check total calories
-        int totalcalories = cherry.calories + apple.calories + pineapple.calories + cantaloupe.calories + orange.calories + sundae.calories + recake.calories;
+        int totalcalories = cherry.calories + apple.calories + pineapple.calories + cantaloupe.calories + orange.calories + peach.calories;
         System.out.println("The total number of calories is " + totalcalories + ".");
+
+        // Check total price
+        int totalprice = cherry.price + apple.price + pineapple.price + cantaloupe.price + orange.price + peach.price;
+        System.out.println("The total cost of the food is $" + totalprice + ".");
     }
 }
 
