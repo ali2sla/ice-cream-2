@@ -13,6 +13,7 @@ class Dessert {
         System.out.println("Name: " + name);
         System.out.println("Calories: " + calories);
         System.out.println("Type: " + type);
+        System.out.println("Serving size: " + size);
         if (order) {
             System.out.println("Bob's Famous " + name + " is added to your wishlist.");
         } else {
