@@ -1,12 +1,7 @@
 package com.sla;
 
-class Fruit {
-    String name;
-    int calories;
-    String type;
-    int size;
-    int price;
-    int tax;
+class Fruit extends Food {
+
     boolean organic;
 
     void explains() {

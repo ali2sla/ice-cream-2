@@ -1,12 +1,7 @@
 package com.sla;
 
-class Dessert {
-    String name;
-    int calories;
-    String type;
-    int size;
-    int price;
-    int tax;
+class Dessert extends Food  {
+
     boolean order;
 
     void explains() {
