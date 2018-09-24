@@ -1,6 +1,6 @@
 package com.sla;
 
-class Snackshop {
+class Snackshop extends Foods{
 
     public static void main(String[] args) {
 
@@ -118,15 +118,27 @@ class Snackshop {
         System.out.println("Information:");
         cherry.explains();
         System.out.println();
+        cherry.explains2();
+        System.out.println();
         apple.explains();
+        System.out.println();
+        apple.explains2();
         System.out.println();
         pineapple.explains();
         System.out.println();
+        pineapple.explains2();
+        System.out.println();
         cantaloupe.explains();
+        System.out.println();
+        cantaloupe.explains2();
         System.out.println();
         orange.explains();
         System.out.println();
+        orange.explains2();
+        System.out.println();
         peach.explains();
+        System.out.println();
+        peach.explains2();
         System.out.println();
         sundae.explains();
         System.out.println();
@@ -175,6 +187,7 @@ class Snackshop {
         // Check total price
         int totalprice = cherry.price + apple.price + pineapple.price + cantaloupe.price + orange.price + peach.price + tiramisu.price + jello.price;
         System.out.println("The total cost of the food is $" + totalprice + ".");
+
     }
 }
 
