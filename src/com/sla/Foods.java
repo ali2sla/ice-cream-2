@@ -8,15 +8,20 @@ class Foods {
     private int size;
     private int price;
     private int tax;
+    private boolean organic;
+    private boolean order;
+
 
     //constructor
-    Food(String theName, int theCalories, String theType, int theSize, int thePrice, int theTax){
+    Foods(String theName, int theCalories, String theType, int theSize, int thePrice, int theTax, boolean whatsOrganic, boolean theOrder) {
         name = theName;
         calories = theCalories;
         type = theType;
         size = theSize;
         price = thePrice;
         tax = theTax;
+        organic = whatsOrganic;
+        order = theOrder;
     }
 
     void explains() {
@@ -27,12 +32,17 @@ class Foods {
     }
 
 
-    String getName {return name;}
-    int getCalories {return calories;}
-    String getType {return type;}
-    int getSize {return size;}
-    int getPrice{return price;}
-    int getTax{return tax;}
+
+
+
+    String getName(){return name;}
+    int getCalories(){return calories;}
+    String getType(){return type;}
+    int getSize(){return size;}
+    int getPrice(){return price;}
+    int getTax(){return tax;}
+    boolean getWhatsOrganic(){return organic;}
+    boolean getOrder(){return order;}
 
 
 }
