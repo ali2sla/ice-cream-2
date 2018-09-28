@@ -47,85 +47,32 @@ class Snackshop extends Food {
         peach.organic = false;
 
         // List of Dessert
-        Dessert sundae = new Dessert();
-        sundae.name = "Sundae";
-        sundae.calories = 284;
-        sundae.type = "Dessert";
-        sundae.size = 1;
-        sundae.price = 1;
-        sundae.tax = 8/100;
-        sundae.order = false;
+        food[6] = new Dessert ("Sundae",284, "Dessert",1,1, 8/100, false);
 
-        Dessert redcake = new Dessert();
-        redcake.name = "Red Velvet Cake";
-        redcake.calories = 453;
-        redcake.type = "Dessert";
-        redcake.size = 1;
-        redcake.price = 30;
-        redcake.tax = 8/100;
-        redcake.order = false;
+        food[7] = new Dessert ("Red Velvet Cake",453, "Dessert",1,30, 8/100, false);
 
-        Dessert tiramisu = new Dessert();
-        tiramisu.name = "Tiramisu";
-        tiramisu.calories = 240;
-        tiramisu.type = "Dessert";
-        tiramisu.size = 1;
-        tiramisu.price = 35;
-        tiramisu.tax = 8/100;
-        tiramisu.order = true;
+        food[8] = new Dessert ("Tiramisu",240, "Dessert",1,35, 8/100, true);
 
-        Dessert jello = new Dessert();
-        jello.name = "Jello";
-        jello.calories = 110;
-        jello.type = "Dessert";
-        jello.size = 1;
-        jello.price = 1;
-        jello.tax = 8/100;
-        jello.order = true;
+        food[9] = new Dessert ("Jello",110, "Dessert",1,1, 8/100, true);
 
-        Dessert brownie = new Dessert();
-        brownie.name = "Brownie";
-        brownie.calories = 132;
-        brownie.type = "Dessert";
-        brownie.size = 1;
-        brownie.price = 1;
-        brownie.tax = 8/100;
-        brownie.order = true;
+        food[10] = new Dessert ("Brownie",132, "Dessert",1,1, 8/100, true);
 
-        Dessert pudding = new Dessert();
-        pudding.name = "Pudding";
-        pudding.calories = 792;
-        pudding.type = "Dessert";
-        pudding.size = 6;
-        pudding.price = 3;
-        pudding.tax = 8/100;
-        pudding.order = false;
+        food[11] = new Dessert ("Pudding",792, "Dessert",6,3, 8/100, false);
+
 
         // Get inforrmation
         System.out.println("Information:");
         cherry.explains();
         System.out.println();
-        cherry.explains2();
-        System.out.println();
         apple.explains();
-        System.out.println();
-        apple.explains2();
         System.out.println();
         pineapple.explains();
         System.out.println();
-        pineapple.explains2();
-        System.out.println();
         cantaloupe.explains();
-        System.out.println();
-        cantaloupe.explains2();
         System.out.println();
         orange.explains();
         System.out.println();
-        orange.explains2();
-        System.out.println();
         peach.explains();
-        System.out.println();
-        peach.explains2();
         System.out.println();
         sundae.explains();
         System.out.println();

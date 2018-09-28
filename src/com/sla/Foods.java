@@ -29,6 +29,11 @@ class Foods {
         System.out.println("Calories: " + calories);
         System.out.println("Type: " + type);
         System.out.println("Serving size: " + size);
+        if (getWhatsOrganic()) {
+            System.out.println("It is organic");
+        } else {
+            System.out.println("It is not organic.");
+        }
     }
 
 
