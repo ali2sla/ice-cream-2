@@ -1,9 +1,14 @@
 package com.sla;
 
-class Fruit extends Foods{
+class Fruit extends Food {
     private boolean organic;
 
-    void explains2() {
+    // Constructors
+    Fruit(String theName, int theCalories, String theType, int theSize, int thePrice, int theTax) {
+        super(theName, theCalories, theType, theSize, thePrice, theTax);
+    }
+
+    /*void explains() {
         if (organic) {
             System.out.println("It is organic");
         } else {
@@ -11,10 +16,15 @@ class Fruit extends Foods{
         }
     }
 
+    /*boolean theOrganic() {
+        return organic;
+    }
+    */
+
     void buy() {
         int cost;
-        cost = price + price*tax;
-        System.out.println("It will cost $" + cost +" for Bob's Famous " + name + ".");
+        cost = thePrice() + thePrice()*theTax() ;
+        System.out.println("It will cost $" + cost +" for Bob's Famous " + theName() + ".");
         }
 
 }

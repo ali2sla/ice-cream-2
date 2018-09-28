@@ -1,27 +1,14 @@
 package com.sla;
 
-class Snackshop extends Foods{
+class Snackshop extends Food {
 
     public static void main(String[] args) {
 
-        // List of Fruits
-        Fruit cherry = new Fruit();
-        cherry.name = "Cherry";
-        cherry.calories = 77;
-        cherry.type = "Fruit";
-        cherry.size = 1;
-        cherry.price = 6;
-        cherry.tax = 8/100;
-        cherry.organic = true;
+        Food[] food = new Food[11];
 
-        Fruit apple = new Fruit();
-        apple.name = "Apple";
-        apple.calories = 95;
-        apple.type = "Fruit";
-        apple.size = 1;
-        apple.price = 1;
-        apple.tax = 8/100;
-        apple.organic = false;
+        // List of Fruits
+        food[0] = new Fruit("Cherry",77,"Fruit",1,6,8/100);
+        food[1]= new Fruit("Apple", 95, "Fruit", 1, 1, 8/100);
 
         Fruit pineapple = new Fruit();
         pineapple.name = "Pineapple";
