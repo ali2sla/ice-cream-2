@@ -4,59 +4,23 @@ class Snackshop extends Food {
 
     public static void main(String[] args) {
 
-        Food[] food = new Food[11];
+        Foods[] food = new Foods[11];
 
         // List of Fruits
-        food[0] = new Fruit("Cherry",77,"Fruit",1,6,8/100);
-        food[1]= new Fruit("Apple", 95, "Fruit", 1, 1, 8/100);
+        food[0] = new Fruit("Cherry",77,"Fruit",1,6,8/100,false);
+        food[1]= new Fruit("Apple", 95, "Fruit", 1, 1, 8/100,true);
+        food[2]= new Fruit("Pineapple",452, "Fruit", 1, 4, 8/100, true);
+        food[3]= new Fruit("Cantaloupe", 186, "Fruit", 1, 7, 8/100, true);
+        food[4]= new Fruit("Orange", 186, "Fruit", 1, 7, 8/100,false);
+        food[5]= new Fruit("Peach", 59, "Fruit", 1, 4, 8/100, true);
 
-        Fruit pineapple = new Fruit();
-        pineapple.name = "Pineapple";
-        pineapple.calories = 452;
-        pineapple.type = "Fruit";
-        pineapple.size = 1;
-        pineapple.price = 4;
-        pineapple.tax = 8/100;
-        pineapple.organic = true;
-
-        Fruit cantaloupe = new Fruit();
-        cantaloupe.name = "Cantaloupe";
-        cantaloupe.calories = 186;
-        cantaloupe.type = "Fruit";
-        cantaloupe.size = 1;
-        cantaloupe.price = 7;
-        cantaloupe.tax = 8/100;
-        cantaloupe.organic = false;
-
-        Fruit orange = new Fruit();
-        orange.name = "Orange";
-        orange.calories = 186;
-        orange.type = "Fruit";
-        orange.size = 1;
-        orange.price = 7;
-        orange.tax = 8/100;
-        orange.organic = true;
-
-        Fruit peach = new Fruit();
-        peach.name = "Peach";
-        peach.calories = 59;
-        peach.type = "Fruit";
-        peach.size = 1;
-        peach.price = 4;
-        peach.tax = 8/100;
-        peach.organic = false;
 
         // List of Dessert
         food[6] = new Dessert ("Sundae",284, "Dessert",1,1, 8/100, false);
-
         food[7] = new Dessert ("Red Velvet Cake",453, "Dessert",1,30, 8/100, false);
-
         food[8] = new Dessert ("Tiramisu",240, "Dessert",1,35, 8/100, true);
-
         food[9] = new Dessert ("Jello",110, "Dessert",1,1, 8/100, true);
-
         food[10] = new Dessert ("Brownie",132, "Dessert",1,1, 8/100, true);
-
         food[11] = new Dessert ("Pudding",792, "Dessert",6,3, 8/100, false);
 
 

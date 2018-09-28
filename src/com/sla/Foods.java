@@ -29,7 +29,7 @@ class Foods {
         System.out.println("Calories: " + calories);
         System.out.println("Type: " + type);
         System.out.println("Serving size: " + size);
-        if (getWhatsOrganic()) {
+        if (theWhatsOrganic()) {
             System.out.println("It is organic");
         } else {
             System.out.println("It is not organic.");
@@ -40,14 +40,14 @@ class Foods {
 
 
 
-    String getName(){return name;}
-    int getCalories(){return calories;}
-    String getType(){return type;}
-    int getSize(){return size;}
-    int getPrice(){return price;}
-    int getTax(){return tax;}
-    boolean getWhatsOrganic(){return organic;}
-    boolean getOrder(){return order;}
+    String theName(){return name;}
+    int theCalories(){return calories;}
+    String theType(){return type;}
+    int theSize(){return size;}
+    int thePrice(){return price;}
+    int theTax(){return tax;}
+    boolean theWhatsOrganic(){return organic;}
+    boolean theOrder(){return order;}
 
 
 }
