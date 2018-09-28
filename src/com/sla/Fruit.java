@@ -1,7 +1,7 @@
 package com.sla;
 
 class Fruit extends Foods{
-    boolean organic;
+    private boolean organic;
 
     void explains2() {
         if (organic) {
