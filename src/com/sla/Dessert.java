@@ -3,23 +3,31 @@ package com.sla;
 class Dessert extends Foods {
 
     //constructor
-    Dessert(String theName, int theCalories, String theType, int theSize, int thePrice, int theTax, boolean theOrder){
-        super(theName, theCalories, theType, theSize, thePrice, theTax, theOrder);
+    Dessert(String theName, int theCalories, String theType, int theSize, int thePrice, int theTax, boolean whatsOrganic, boolean theOrder){
+        super(theName, theCalories, theType, theSize, thePrice, theTax, whatsOrganic, theOrder);
     }
 
     void explains() {
-
-        if (theOrder) {
-            System.out.println("Bob's Famous " + getName() + " is added to your wishlist.");
+        System.out.println("Name: " + theName());
+        System.out.println("Calories: " + theCalories());
+        System.out.println("Type: " + theType());
+        System.out.println("Serving size: " + theSize());
+        if (whatsOrganic()) {
+            System.out.println("It is organic");
         } else {
-            System.out.println("Bob's Famous " + getName() + " is not in your wishlist.");
+            System.out.println("It is not organic.");
+        }
+        if (theOrder()) {
+            System.out.println("Bob's Famous " + theName() + " is added to your wishlist.");
+        } else {
+            System.out.println("Bob's Famous " + theName() + " is not in your wishlist.");
         }
     }
 
-        void buy () {
+        void buy(){
             int cost;
-            cost = getPrice() + getPrice() * getTax();
-            System.out.println("It will cost $" + cost + " for Bob's Famous " + getName() + ".");
+            cost = thePrice() + thePrice() * theTax();
+            System.out.println("It will cost $" + cost + " for Bob's Famous " + theName() + ".");
         }
 
     }

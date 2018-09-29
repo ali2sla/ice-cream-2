@@ -2,7 +2,8 @@ package com.sla;
 
 class Foods {
 
-   private String name;
+    // Fields
+    private String name;
     private int calories;
     private String type;
     private int size;
@@ -10,7 +11,6 @@ class Foods {
     private int tax;
     private boolean organic;
     private boolean order;
-
 
     //constructor
     Foods(String theName, int theCalories, String theType, int theSize, int thePrice, int theTax, boolean whatsOrganic, boolean theOrder) {
@@ -29,25 +29,34 @@ class Foods {
         System.out.println("Calories: " + calories);
         System.out.println("Type: " + type);
         System.out.println("Serving size: " + size);
-        if (getWhatsOrganic()) {
+        if (whatsOrganic()) {
             System.out.println("It is organic");
         } else {
             System.out.println("It is not organic.");
         }
+        if (theOrder()) {
+            System.out.println("Bob's Famous " + theName() + " is added to your wishlist.");
+        } else {
+            System.out.println("Bob's Famous " + theName() + " is not in your wishlist.");
+        }
     }
 
 
+    void buy() {
+        int cost;
+        cost = thePrice() + thePrice()*theTax();
+        System.out.println("It will cost $" + cost +" for Bob's Famous " + theName() + ".");
+    }
 
 
-
-    String getName(){return name;}
-    int getCalories(){return calories;}
-    String getType(){return type;}
-    int getSize(){return size;}
-    int getPrice(){return price;}
-    int getTax(){return tax;}
-    boolean getWhatsOrganic(){return organic;}
-    boolean getOrder(){return order;}
+    String theName(){return name;}
+    int theCalories(){return calories;}
+    String theType(){return type;}
+    int theSize(){return size;}
+    int thePrice(){return price;}
+    int theTax(){return tax;}
+    boolean whatsOrganic(){return organic;}
+    boolean theOrder(){return order;}
 
 
 }
