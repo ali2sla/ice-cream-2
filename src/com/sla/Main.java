@@ -9,9 +9,9 @@ class Snackshop {
 
         // List of Fruits
         foods[0] = new Fruit("Cherry", 77, "Fruit", 1, 6, 8 / 100, true, false);
-        foods[1] = new Fruit("Apple", 95, "Fruit", 1, 1, 8 / 100, false, false);
+        foods[1] = new Fruit("Apple", 95, "Fruit", 1, 1, 8 / 100, false, true);
         foods[2] = new Fruit("Pineapple", 452, "Fruit", 1, 4, 8 / 100, true, false);
-        foods[3] = new Fruit("Cantaloupe", 186, "Fruit", 1, 7, 8 / 100, false, false);
+        foods[3] = new Fruit("Cantaloupe", 186, "Fruit", 1, 7, 8 / 100, false, true);
         foods[4] = new Fruit("Orange", 186, "Fruit", 1, 7, 8 / 100, true, true);
         foods[5] = new Fruit("Peach", 59, "Fruit", 1, 4, 8 / 100, false, false);
 
